@@ -1,0 +1,59 @@
+<div class="navbar">
+<div class="element-navbar">
+<div class="logo">
+<img routerLink="/" src="..\assets\WhatsApp Image 2024-11-27 at 23.43.17.jpeg" class="logo">
+</div>
+<div class="section">
+    <p 
+      routerLink="/whatdo" 
+      [class.active]="activeLink === '/whatdo'" 
+      (click)="setActive('/whatdo')"
+    >
+        What We Doing
+    </p>
+    <p 
+      routerLink="/inventor" 
+      [class.active]="activeLink === '/inventor'" 
+      (click)="setActive('/inventor')"
+    >
+        Inventor
+    </p>
+    <p 
+      routerLink="/whowe" 
+      [class.active]="activeLink === '/whowe'" 
+      (click)="setActive('/whowe')"
+    >
+        Who We Are
+    </p>
+    <p 
+      routerLink="/wora" 
+      [class.active]="activeLink === '/wora'" 
+      (click)="setActive('/wora')"
+    >
+        Woratech
+    </p>
+    <p 
+      routerLink="/about" 
+      [class.active]="activeLink === '/about'" 
+      (click)="setActive('/about')"
+    >
+        About Us
+    </p>
+    <p 
+      routerLink="/contact" 
+      [class.active]="activeLink === '/contact'" 
+      (click)="setActive('/contact')"
+    >
+        Contact Us
+    </p>
+</div>
+
+<div class="login">
+<button class="login" routerLink="/login">Login</button>
+
+</div>
+
+
+</div>
+
+</div>

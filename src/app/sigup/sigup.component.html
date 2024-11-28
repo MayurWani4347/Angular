@@ -1,0 +1,28 @@
+<div class="p">
+<div class="app-container">
+    <h2>Sign Up</h2>
+    <form (ngSubmit)="onSignupSubmit()" #signupForm="ngForm">
+      <input [(ngModel)]="signupModel.name" name="name" type="text" placeholder="Full Name" required #name="ngModel"/>
+      <div *ngIf="name.touched && name.invalid" class="error">
+        <small *ngIf="name.errors?.['required']">Name is required</small>
+      </div>
+  
+      <input [(ngModel)]="signupModel.email" name="email" type="email" placeholder="Email" required #email="ngModel"/>
+      <div *ngIf="email.touched && email.invalid" class="error">
+        <small *ngIf="email.errors?.['required']">Email is required</small>
+        <small *ngIf="email.errors?.['email']">Invalid email format</small>
+      </div>
+  
+      <input [(ngModel)]="signupModel.password" name="password" type="password" placeholder="Password" required #password="ngModel"/>
+      <div *ngIf="password.touched && password.invalid" class="error">
+        <small *ngIf="password.errors?.['required']">Password is required</small>
+      </div>
+      
+      <button type="submit" [disabled]="!signupForm.valid">Sign up</button>
+    </form>
+  
+    <div class="form-switch">
+      <label routerLink="/login">Already have an account? Login</label>
+    </div>
+  </div>
+</div>
