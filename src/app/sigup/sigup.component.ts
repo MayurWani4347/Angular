@@ -22,11 +22,11 @@ export class SigupComponent {
       password: this.signupModel.password,
     };
     
-    // Store user data in localStorage
+
     localStorage.setItem('user', JSON.stringify(user));
     
     alert('Sign up successful! You can now login.');
-    this.router.navigate(['/login']);  // Redirect to login page
+    this.router.navigate(['/login']);  
   }
 }
 

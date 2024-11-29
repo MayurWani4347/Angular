@@ -1,7 +1,13 @@
 <div class="navbar">
 <div class="element-navbar">
 <div class="logo">
+  <p 
+  routerLink="/" 
+  [class.active]="activeLink === '/'" 
+  (click)="setActive('/')"
+>
 <img routerLink="/" src="..\assets\WhatsApp Image 2024-11-27 at 23.43.17.jpeg" class="logo">
+</p>
 </div>
 <div class="section">
     <p 
@@ -49,8 +55,13 @@
 </div>
 
 <div class="login">
+  <p 
+  routerLink="/login" 
+  [class.active]="activeLink === '/login'" 
+  (click)="setActive('/login')"
+>
 <button class="login" routerLink="/login">Login</button>
-
+</p>
 </div>
 
 

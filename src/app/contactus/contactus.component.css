@@ -47,7 +47,7 @@ h1{
     /* height: 200px; */
     text-align: center;
  color: #000;
-    /* border-radius: 8px; */
+  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -101,6 +101,6 @@ h1{
     /* gap: 30px */
     margin-left: 30px;
     margin-bottom: 100px;
-
+color:#000;
     
 }

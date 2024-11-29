@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-inventor',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './inventor.component.html',
   styleUrl: './inventor.component.css'
 })

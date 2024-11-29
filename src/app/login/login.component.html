@@ -1,24 +1,50 @@
 <div class="o">
-<div class="b">
-<div class="form-container">
-    <h2>Login</h2>
-    <form (ngSubmit)="onLoginSubmit()" #loginForm="ngForm">
-      <input [(ngModel)]="loginModel.email" name="email" type="email" placeholder="Email" required #email="ngModel"/>
-      <div *ngIf="email.touched && email.invalid" class="error">
-        <small *ngIf="email.errors?.['required']">Email is required</small>
-        <small *ngIf="email.errors?.['email']">Invalid email format</small>
+  <div class="b">
+    <div class="form-container">
+      <h2>Login</h2>
+      <form (ngSubmit)="onLoginSubmit()" #loginForm="ngForm">
+        <div class="form-group">
+          <input 
+            [(ngModel)]="loginModel.email" 
+            name="email" 
+            type="email" 
+            placeholder="Email" 
+            required 
+            email 
+            #email="ngModel" 
+            class="form-input"
+          />
+          <div *ngIf="email.touched && email.invalid" class="error">
+            <small *ngIf="email.errors?.['required']">Email is required</small>
+            <small *ngIf="email.errors?.['email']">Invalid email format</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <input 
+            [(ngModel)]="loginModel.password" 
+            name="password" 
+            type="password" 
+            placeholder="Password" 
+            required 
+            minlength="6" 
+            #password="ngModel" 
+            class="form-input"
+          />
+          <div *ngIf="password.touched && password.invalid" class="error">
+            <small *ngIf="password.errors?.['required']">Password is required</small>
+            <small *ngIf="password.errors?.['minlength']">Password must be at least 6 characters long</small>
+          </div>
+        </div>
+
+        <button type="submit" [disabled]="!loginForm.valid" class="button">
+          Login <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
+      </form>
+
+
+      <div class="switch">
+        <label routerLink="/signup">Don't have an account? Sign up</label>
       </div>
-      
-      <input [(ngModel)]="loginModel.password" name="password" type="password" placeholder="Password" required #password="ngModel"/>
-      <div *ngIf="password.touched && password.invalid" class="error">
-        <small *ngIf="password.errors?.['required']">Password is required</small>
-      </div>
-      
-      <button type="submit" >Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
-    </form>
-  
-    <div class="form-switch">
-      <label routerLink="/signup">Don't have an account? Sign up</label>
     </div>
   </div>
-</div></div>
+</div>

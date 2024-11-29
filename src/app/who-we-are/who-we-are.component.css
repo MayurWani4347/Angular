@@ -1,0 +1,124 @@
+
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+ 
+  .header {
+    background: url('https://th.bing.com/th/id/OIP.FNoYLEzvtFGXiAMVmlQAkAAAAA?rs=1&pid=ImgDetMain') no-repeat center center/cover;
+   
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .header .highlight {
+    color: #ffd700;
+  }
+  
+  .header p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+  
+  .header .cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .header .cta-button:hover {
+    background-color: #ffae00;
+  }
+  
+ 
+  .about-us, .our-mission, .team {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us h2, .our-mission h2, .team h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #2575fc;
+  }
+  
+  .about-us p, .our-mission p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .our-mission {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    color: white;
+  }
+  
+  .our-mission .cta-button {
+    margin-top: 20px;
+  }
+  
+
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .team-member {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    background: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .team-member p {
+    color: #555;
+    font-style: italic;
+  }
+  

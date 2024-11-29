@@ -1,0 +1,109 @@
+
+main {
+    padding: 40px 0;
+}
+
+.intro {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.founder {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.founder-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.founder-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.founder-bio {
+    max-width: 600px;
+}
+
+.founder-bio h3 {
+    font-size: 28px;
+    color: #333;
+}
+
+.founder-bio p {
+    font-size: 18px;
+    color: #666;
+}
+
+.team {
+    /* padding: 40px 0; */
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 32px;
+    color: #333;
+    /* margin-bottom: 30px; */
+}
+
+
+
+
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+.team-member {
+    text-align: center;
+    width: 250px;
+}
+
+.image-container {
+    margin-bottom: 10px;
+}
+
+.team-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+}
+
+.info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info p {
+    font-size: 20px;
+    color: #777;
+}
